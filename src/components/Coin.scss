@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+$firstColor: #191E29;
+$secondColor: #424242;
+$thirdColor: #ffa600;
+
+.coin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 25%;
+    margin: 20px 20px;
+
+    background-color: #fff;
+    box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    
+
+    .top-section {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #ebe1e1;
+
+        .coin-marketcap {
+            display: flex;
+            justify-content: center;
+
+            .volume {
+                font-weight: 700;
+                margin-right: 7px;
+            };
+
+        }
+    }
+
+    .middle-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px 0;
+        width: 100%;
+        border-bottom: 1px solid #ebe1e1;
+
+        h2 {
+            font-size: 1em;
+        }
+
+        .coin-percent {
+            width: 50px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+
+        img {
+            width: 30px;
+            height: 30px;            
+        }
+    }
+
+    .bottom-section {
+        justify-content: space-between;
+
+        color: #fff;
+        font-weight: 700;
+        
+        display: flex;
+        justify-content: center;
+
+        border-bottom: 1px solid #ebe1e1;
+        border-radius: 0 0 10px 10px;
+
+        background-color: $thirdColor;
+
+        .coin-price {
+            text-align: center;
+            width: 100%;
+        }
+
+        .price {
+            font-weight: 700;
+        }
+    }
+}

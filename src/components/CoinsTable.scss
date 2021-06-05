@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+$firstColor: #191E29;
+$secondColor: #424242;
+$thirdColor: #ffa600;
+
+.coins-table-container {
+  margin-top: 50px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  input::placeholder {
+      color: rgba(255, 255, 255, 0.37);
+      font-weight: 300;
+      font-size: .8em;
+  }
+
+  input {
+      margin-left: 10px;
+      border-radius: 0.3em;
+      border: .1em solid rgba(255, 255, 255, 0);
+      background-color: $firstColor;
+      padding: 5px 10px 7px 10px;
+      box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.1);
+  }
+
+  
+  input:focus {
+      border-radius: 0.3em;
+      border: .1em solid rgb(255, 255, 255);
+      background-color: $secondColor;
+      padding: 5px 10px 7px 10px;
+      box-shadow: inset 1px 1px 8px 0px rgba(0,0,0,0.1);
+  }
+
+  input:focus::placeholder {
+      font-weight: 100;
+      color: rgba(255, 255, 255, 0.37);
+  }
+
+  input:focus-visible {
+      outline: none;
+      color: white;
+
+  }
+}
+
+.coins-table {  
+    margin-top: 80px;
+  
+  
+    h1 { 
+      text-align: center;
+    };
+  
+    .coins-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+  
+    }
+  }
+  
+  
+.coin-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .coin-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #d7d7d7;
+    width: 900px;
+  }
+  
+  .coin {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+  
+    min-width: 300px;
+  }
+  
+  .coin h1 {
+    font-size: 16px;
+    width: 150px;
+  }
+  
+  .coin img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .coin-symbol {
+    text-transform: uppercase;
+  }
+  
+  .coin-data {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .coin-price {
+    width: 110px;
+  }
+  
+  .coin-volume {
+    width: 155px;
+  }
+  
+  .coin-marketcap {
+    width: 230px;
+  }
+  
+  .coin-percent {
+    width: 100px;
+  }
+  
+  .red {
+    color: #f00606;
+  }
+  
+  .green {
+    color: #11d811;
+  }
