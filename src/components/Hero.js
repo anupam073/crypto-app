@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../components/Hero.scss'
 import imageBg from'../img/hero-image.png'
 
@@ -7,8 +7,8 @@ function Hero() {
     return (
         <div className="hero-container">
             <div className="hero-title">
-                <h1>Blockchain-powered<br />products for HR</h1>
-                <p>Using blockchain to streamline global access to work and payments</p>
+                <h1>Explore top cryptocurrencies<br />with CoinViewer</h1>
+                <span>View crypto prices and other stats, including Bitcoin, Ethereum, XRP, and more.</span>
             </div>
             <div className="hero-img">
                 <img src={imageBg} alt='hero'/>

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+$firstColor: #191E29;
+$secondColor: #424242;
+$thirdColor: #ffa600;
+$bgColor: #f8f8f8;
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: .8em;
+
+
+
+    font-size: .8em;
+    height: 50px;
+    background-color: $bgColor;
+}

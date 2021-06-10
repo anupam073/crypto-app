@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+$firstColor: #191E29;
+$secondColor: #424242;
+$thirdColor: #ffa600;
+$bgColor: #fafafa;
+
+
+
+.details-container {
+
+    margin: 0 auto;
+    width: 80%;
+
+
+    .details-title {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-top: 25px;
+
+
+        .details-statistics {
+
+            .price {
+                display: flex;
+                align-items: center;
+            }
+
+            .coin-percent {
+                color: #fff;
+                font-weight: 700;
+
+                margin: 0 10px;
+                padding: 5px 8px;
+                border-radius: 5px;
+            }
+
+            .red {
+                background-color: #f00606;
+            }
+              
+            .green {
+                background-color: #11d811;
+            }
+        }
+
+        .details-name {
+            
+            .information {
+                display: flex;
+                align-items: center;
+        
+                h1 {
+                    font-size: 2em;
+                    margin: 10px 20px;
+                }
+        
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .symbol-box {
+                    color: #fff;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    background-color: $thirdColor;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                }
+            }
+            
+            .boxes {
+                display: flex;
+        
+                div {
+                    padding: 5px 10px;
+                }
+
+                .rank-box,
+                .market-cap-box {
+                    color: $secondColor;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    background-color: #4242422c;
+                    border-radius: 5px;
+                    padding: 5px 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .details-statistics {
+        .right-title {
+            font-size: 0.8em;
+            font-weight: 700;
+            color:$secondColor;
+
+        }
+
+        .current-price {
+            font-size: 2em;
+            font-weight: 700;
+
+        }
+
+        .change {
+        }
+
+
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.1);
+        padding: 50px 30px;
+        margin: 50px 0;
+
+        .text-description {
+            font-size: .9em;
+            line-height: 1.7em;
+            color: $secondColor;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: $thirdColor;
+            }
+        }
+
+        .btn-buy {
+            margin: 20px 0;
+
+            background-color: $thirdColor;
+            border-radius: 6px;
+            padding: 10px 20px;
+
+            color: #f8f8f8;
+            text-decoration: none;
+
+            transition: .2s;
+
+            &:hover {
+                background-color: #ffa600a6;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .changes-information {
+        margin: 50px 0 100px 0;
+
+        .changes-title {
+            text-align: center;
+
+        }
+    
+        .changes-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            height: 100px;
+            width: 100%;
+            margin-top: 50px;
+            padding-bottom: 80px;
+    
+            .week,
+            .month,
+            .year {
+                border-left: 1px solid #42424223; 
+            }
+    
+    
+    
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                height: 100%;
+                padding: 0 50px;
+                margin: 15px 0;
+
+                .coin-percent {
+                    color: #fff;
+                    font-weight: 700;
+    
+                    margin: 10px 10px;
+                    padding: 5px 8px;
+                    border-radius: 5px;
+                }
+    
+                .red {
+                    background-color: #f00606;
+                }
+                  
+                .green {
+                    background-color: #11d811;
+                }
+    
+    
+                h3 {
+                    color: $secondColor;
+                    margin: 0;
+                    padding: 0;
+                }
+    
+                p {
+    
+                    font-size: 1.1em;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+    
+        }
+    
+    }
+
+    
+}

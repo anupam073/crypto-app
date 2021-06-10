@@ -9,22 +9,34 @@ $thirdColor: #ffa600;
     flex-direction: column;
     justify-content: space-between;
 
-    width: 25%;
-    margin: 20px 20px;
+    margin: 10px 10px;
 
     background-color: #fff;
     box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.1);
     border-radius: 10px;
+
     
 
+    .red {
+        color: #f00606;
+      }
+      
+    .green {
+        color: #11d811;
+    }
+    
     .top-section {
         display: flex;
         justify-content: center;
+        align-items: center;
         border-bottom: 1px solid #ebe1e1;
+        height: 30px;
 
         .coin-marketcap {
             display: flex;
             justify-content: center;
+
+
 
             .volume {
                 font-weight: 700;
@@ -48,7 +60,7 @@ $thirdColor: #ffa600;
         }
 
         .coin-percent {
-            width: 50px;
+
         }
 
         p {

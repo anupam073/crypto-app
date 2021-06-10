@@ -3,15 +3,16 @@
 $firstColor: #191E29;
 $secondColor: #424242;
 $thirdColor: #ffa600;
+$bgColor: #fafafa;
 
 
 .navbar-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 5%;
+    padding: 0 10%;
     border-bottom: 1px solid #ebe1e1;
-    background-color: #f3f6fd;
+    background-color: $bgColor;
 
 
     h2 {
@@ -30,19 +31,16 @@ $thirdColor: #ffa600;
         height: 30px;
       }
 
-    .menu {
+    .menu ul {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
 
-        .search-label {
-            font-weight: 700;
-            margin-right: 10px;
-        }
-
-        a {
-            font-size: .8em;
+        li {
+            text-decoration: none;
+            list-style: none;
+            font-size: .9em;
 
             font-weight: 700;
             margin: 0 10px;
