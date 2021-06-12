@@ -15,8 +15,6 @@ $thirdColor: #ffa600;
     box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.1);
     border-radius: 10px;
 
-    
-
     .red {
         color: #f00606;
       }
@@ -33,10 +31,10 @@ $thirdColor: #ffa600;
         height: 30px;
 
         .coin-marketcap {
+            color: #191E29;
+
             display: flex;
             justify-content: center;
-
-
 
             .volume {
                 font-weight: 700;
@@ -56,11 +54,8 @@ $thirdColor: #ffa600;
         border-bottom: 1px solid #ebe1e1;
 
         h2 {
+            color: #191E29;
             font-size: 1em;
-        }
-
-        .coin-percent {
-
         }
 
         p {
@@ -68,7 +63,6 @@ $thirdColor: #ffa600;
             padding: 0;
             text-align: center;
         }
-
 
         img {
             width: 30px;

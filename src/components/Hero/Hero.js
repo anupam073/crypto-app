@@ -1,6 +1,7 @@
 import React from 'react';
-import '../components/Hero.scss'
-import imageBg from'../img/hero-image.png'
+import '../Hero/Hero.scss'
+import imageBg from '../../assets/hero-image.png';
+
 
 function Hero() {
     

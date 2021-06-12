@@ -1,12 +1,7 @@
-
-
 import React, { useState, useEffect } from 'react';
-import Coin from '../components/Coin';
-import '../components/CoinsTable.scss';
+import Coin from '../Coin/Coin';
+import '../CoinsTable/CoinsTable.scss';
 import { Link } from 'react-router-dom';
-
-
-
 
 function CoinsTable() {
     useEffect(() => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/Coin.scss';
+import '../Coin/Coin.scss';
 
 
 

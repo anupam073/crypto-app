@@ -1,10 +1,9 @@
 import './App.scss';
-import Navbar from './components/Navbar';
-import Contact from './components/Contact';
-import Wallets from './components/Wallets';
-import Home from './components/Home';
-import CoinDetails from './components/CoinDetails';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Contact from './components/Contact/Contact';
+import Home from './components/Home/Home';
+import CoinDetails from './components/CoinDetails/CoinDetails';
+import Footer from './components/Footer/Footer';
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -16,18 +15,16 @@ import {
 function App() {
   
   return (
-    <Router>
+    <Router basename={'/crypto-app'}>
       <div>
         <Navbar />
         <Switch>
-          <Route path="/crypto-app" exact component={Home} />
-          <Route path="/crypto-app/contact" component={Contact} />
-          <Route path="/crypto-app/:id" component={CoinDetails} />
+          <Route path="/" exact component={Home} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/:id" component={CoinDetails} />
         </Switch>
-        <Footer />
       </div>
     </Router>
-
   );
 }
 

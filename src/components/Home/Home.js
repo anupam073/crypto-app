@@ -1,6 +1,7 @@
 import './Home.scss';
-import Hero from './Hero';
-import CoinsTable from './CoinsTable';
+import Hero from '../Hero/Hero';
+import Footer from '../../components/Footer/Footer';
+import CoinsTable from '../CoinsTable/CoinsTable';
 import React, { Component } from 'react';
 
 class Home extends Component {
@@ -10,7 +11,7 @@ class Home extends Component {
             <>
                 <Hero />
                 <CoinsTable />
-
+                <Footer />
             </>
         )
     }

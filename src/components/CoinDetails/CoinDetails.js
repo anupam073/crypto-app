@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-
-import '../components/CoinDetails.scss';
+import Footer from '../../components/Footer/Footer';
+import '../CoinDetails/CoinDetails.scss';
 
 function CoinDetails({ match }) {
 
@@ -26,19 +25,6 @@ function CoinDetails({ match }) {
         const item = await fetchItem.json();
         setItem(item);        
     };
-
-    // useEffect(() => {
-    //     axios
-    //       .get(
-    //         'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=25&page=1&sparkline=false'
-    //       )
-    //       .then(res => {
-    //         setCoins(res.data);
-    //         console.log(res.data);
-    //       })
-    //       .catch(error => console.log(error));
-    //   }, []);
-
 
     return (
         <div className="details-container">
@@ -89,10 +75,9 @@ function CoinDetails({ match }) {
                         <p className="change">{item.market_data.price_change_percentage_1y < 0 ? (<p className='coin-percent red'>{Number(item.market_data.price_change_percentage_1y).toFixed(2)}%</p>) : (<p className='coin-percent green'>{Number(item.market_data.price_change_percentage_1y).toFixed(2)}%</p>)}</p>
                     </div>
                 </div>
-                
             </div> 
+            <Footer />
         </div>
- 
     );
 }
 
